@@ -1,0 +1,12 @@
+h1{
+  color:darkgreen;
+}
+
+h2{
+  color: forestgreen;
+}
+
+label.input-label{
+  color: cornflowerblue;
+  font-weight: bolder;
+}

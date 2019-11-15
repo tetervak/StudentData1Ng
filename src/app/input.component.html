@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+<form #studentForm="ngForm" (ngSubmit)="send(studentForm.value)">
+  <h2>Student Name:</h2>
+  <p>
+    <label for="first" class="input-label">First Name:</label><br/>
+    <input id="first" type="text" [(ngModel)]="student.firstName" name="firstName">
+  </p>
+  <p>
+    <label for="last" class="input-label">Last Name:</label><br/>
+    <input id="last" type="text" [(ngModel)]="student.lastName" name="lastName">
+  </p>
+  <h2>Student Info:</h2>
+  <p>
+    <label for="prog" class="input-label">Program: </label><br/>
+    <select id="prog" [(ngModel)]="student.programId" name="programId">
+      <option *ngFor="let p of programNames; let i=index;" [value]='i'>{{p}}</option>
+    </select>
+  </p>
+  <p>
+    <label class="input-label">Year:</label><br/>
+    <label><input type="radio" value="1" class="radio-label"
+                  [(ngModel)]="student.programYear" name="programYear">First</label>
+    <label><input name="programYear" type="radio" value="2" class="radio-label"
+                  [(ngModel)]="student.programYear">Second</label>
+  </p>
+  <p>
+    <label class="input-label">Options:</label><br/>
+    <label><input type="checkbox" value="yes" class="checkbox-label"
+                  [(ngModel)]="student.programCoop" name="programCoop">Co-op</label><br/>
+    <label><input type="checkbox" value="yes" class="checkbox-label"
+                  [(ngModel)]="student.programInternship" name="programInternship">Internship</label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>

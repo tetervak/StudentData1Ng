@@ -1,0 +1,20 @@
+h1{
+  color:darkgreen;
+}
+
+h2{
+  color: forestgreen;
+}
+
+label.output-label{
+  color: cornflowerblue;
+  font-weight: bolder;
+}
+
+span.output-value{
+  font-weight: bolder;
+  font-style: italic;
+  color: blueviolet;
+  margin-left: 1em;
+}
+
