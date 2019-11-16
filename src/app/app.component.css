@@ -1,43 +1,31 @@
-main{
+:host{
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "main-header main-header"
-    "first-column second-column"
-    "main-footer main-footer";
+    "host-header host-header"
+    "host-first-column host-second-column"
+    "host-footer host-footer";
   grid-gap: 1em;
   margin-left: 2em;
   margin-right: 2em;
 }
 
-#main-header{
-  grid-area: main-header;
+header{
+  grid-area: host-header;
   text-align: center;
   padding: 1em;
   background:aquamarine;
-}
-
-h1{
   color: blueviolet;
 }
 
-#main-input{
-  grid-area: first-column;
-  padding: 1em;
-  background: cornsilk;
+app-input{
+  grid-area: host-first-column;
 }
 
-#main-output{
-  grid-area: second-column;
-  padding: 1em;
-  background: cornsilk;
+app-output{
+  grid-area: host-second-column;
 }
 
-#main-footer{
-  grid-area: main-footer;
-  text-align: center;
-  padding: 1em;
-  background: aquamarine;
-  color: blueviolet;
+app-footer{
+  grid-area: host-footer;
 }
-

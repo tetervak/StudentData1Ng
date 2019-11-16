@@ -1,5 +1,10 @@
+:host{
+  padding: 1em;
+  background: cornsilk;
+}
+
 h1{
-  color:darkgreen;
+  color:dodgerblue;
 }
 
 h2{
