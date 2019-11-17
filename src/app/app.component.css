@@ -1,18 +1,4 @@
-:host{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "header header"
-    "input output"
-    "footer footer";
-  grid-gap: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-header{
-  text-align: center;
-  padding: 1em;
-  background:aquamarine;
-  color: blueviolet;
+h1{
+  color: #4caf50;
+  text-shadow: 2px 2px 5px #81c784;
 }
