@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import {Student} from './student';
-import {StudentDataService} from './student-data.service';
+import {Student} from '../student';
+import {StudentDataService} from '../student-data.service';
 
 @Component({
-  selector: 'app-input',
-  templateUrl: './input.component.html',
-  styleUrls: ['./input.component.css']
+  selector: 'app-output',
+  templateUrl: './output.component.html',
+  styleUrls: ['./output.component.css']
 })
-export class InputComponent {
-  public title = 'Input';
+export class OutputComponent {
+  title = 'Output';
   public programNames = [
     '-- select program --',
     'Computer Programmer', 'Systems Technology',
@@ -16,9 +16,5 @@ export class InputComponent {
   public student: Student;
   public constructor(dataService: StudentDataService) {
     this.student = dataService.student;
-  }
-
-  public send(studentForm) {
-    console.log(studentForm);
   }
 }
